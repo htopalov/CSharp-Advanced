@@ -7,20 +7,29 @@ namespace Odd_Lines
     {
         static void Main(string[] args)
         {
-            using (var reader = new StreamReader("Input.txt"))
+            string path = Path.Combine("data", "Input.txt");
+            string destination = Path.Combine("data", "output.txt");
+
+            using (FileStream file = new FileStream(path, FileMode.Open))
             {
-                string line = reader.ReadLine();
-                int count = 0;
-                using (var writer = new StreamWriter("output.txt"))
+                using (TextReader reader = new StreamReader(file))
                 {
-                    while (line != null)
+                    using (FileStream fileWriteStream = new FileStream(destination, FileMode.Create))
                     {
-                        if (count % 2 == 1)
+                        using (TextWriter writer = new StreamWriter(fileWriteStream))
                         {
-                            writer.WriteLine(line);
+                            string line = reader.ReadLine();
+                            int counter = 0;
+                            while (line != null)
+                            {
+                                if (counter % 2 != 0)
+                                {
+                                    writer.WriteLine(line);
+                                }
+                                counter++;
+                                line = reader.ReadLine();
+                            }
                         }
-                        count++;
-                        line = reader.ReadLine();
                     }
                 }
             }

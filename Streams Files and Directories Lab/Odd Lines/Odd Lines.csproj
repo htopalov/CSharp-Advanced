@@ -6,4 +6,10 @@
     <RootNamespace>Odd_Lines</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Update="data\Input.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
