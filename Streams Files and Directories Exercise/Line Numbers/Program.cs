@@ -7,9 +7,7 @@ namespace Line_Numbers
     {
         static void Main(string[] args)
         {
-            string path = Path.Combine("data", "text.txt");
-            string destination = Path.Combine("data", "output.txt");
-            string[] lines = File.ReadAllLines(path);
+            string[] lines = File.ReadAllLines(Path.Combine("data", "text.txt"));
             int charsCount = 0;
             int punctCount = 0;
             int lineCount = 1;
@@ -26,7 +24,7 @@ namespace Line_Numbers
                         punctCount++;
                     }
                 }
-                File.AppendAllText(destination, $"Line {lineCount}: {line} ({charsCount})({punctCount})" + Environment.NewLine);
+                File.AppendAllText(Path.Combine("data", "output.txt"), $"Line {lineCount}: {line} ({charsCount})({punctCount})" + Environment.NewLine);
                 lineCount++;
                 charsCount = 0;
                 punctCount = 0;

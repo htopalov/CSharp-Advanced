@@ -33,13 +33,9 @@ namespace Word_Count
                     }
                 }
             }
-            foreach (var item in collection)
-            {
-                File.AppendAllText(Path.Combine("data", "actualResult.txt"), $"{item.Key} - {item.Value}"+Environment.NewLine);
-            }
             foreach (var item in collection.OrderByDescending(x=>x.Value))
             {
-                File.AppendAllText(Path.Combine("data", "expectedResult.txt"), $"{item.Key} - {item.Value}"+Environment.NewLine);
+                File.AppendAllText(Path.Combine("data", "actualResult.txt"), $"{item.Key} - {item.Value}"+Environment.NewLine);
             }
         }
     }
