@@ -23,10 +23,7 @@ namespace Find_Evens_or_Odds
             {
                 pred = x => x % 2 != 0;
             }
-            foreach (var item in result.Where(pred))
-            {
-                Console.Write(item + " ");
-            }
+            Console.WriteLine(string.Join(" ", result.Where(pred)));
         }
     }
 }
