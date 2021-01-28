@@ -12,29 +12,21 @@ namespace Find_Evens_or_Odds
                 .Split(" ", StringSplitOptions.RemoveEmptyEntries)
                 .Select(int.Parse)
                 .ToArray();
-            string command = Console.ReadLine();
-            Predicate<int> myPred;
-            if (command == "even")
-            {
-                myPred = x => x % 2 == 0;
-            }
-            else
-            {
-                myPred = x => x % 2 != 0;
-            }
-
-        }
-        static void Filter(int[] arr, Predicate<int> test)
-        {
             List<int> result = new List<int>();
-            for (int i = arr[0]; i < arr[1]; i++)
+            for (int i = bounds[0]; i <= bounds[1]; i++)
             {
-                if (test(i))
-                {
-                    result.Add(i);
-                }
+                result.Add(i);
             }
-            Console.WriteLine(string.Join(" ", result));
+            string command = Console.ReadLine();
+            Func<int, bool> pred = x => x % 2 == 0;
+            if (command == "odd")
+            {
+                pred = x => x % 2 != 0;
+            }
+            foreach (var item in result.Where(pred))
+            {
+                Console.Write(item + " ");
+            }
         }
     }
 }
