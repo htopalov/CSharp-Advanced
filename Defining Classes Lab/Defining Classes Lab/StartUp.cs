@@ -14,7 +14,6 @@ namespace CarManufacturer
             while (tireInput != "No more tires")
             {
                 string[] splitted = tireInput.Split(' ', StringSplitOptions.RemoveEmptyEntries);
-
                 var currTires = new Tire[4]
                 {
                     new Tire(int.Parse(splitted[0]), double.Parse(splitted[1])),
@@ -51,15 +50,18 @@ namespace CarManufacturer
                 double fuelConsumption = double.Parse(splittedCarData[4]);
                 int engineIndex = int.Parse(splittedCarData[5]);
                 int tireIndex = int.Parse(splittedCarData[6]);
-                if ((engineIndex >= 0 && engineIndex < engineList.Count) && (tireIndex >= 0 && tireIndex < tireList.Count))
-                {
-                    // not finished....tireList[tireIndex] is problematic, but it's too late...tomorrow finishig with that
-                    //and whats left after that.... filtering and adding some more commands....
-                    var car = new Car(make, model, year, fuelQuantity, fuelConsumption, engineList[engineIndex], tireList[tireIndex]);
-                    carList.Add(car);
-                }
+                var currentCar = new Car(make, model, year, fuelQuantity, fuelConsumption, engineList[engineIndex], tireList[tireIndex]);
+                carList.Add(currentCar);
 
                 finalInput = Console.ReadLine();
+            }
+            carList = carList
+                .Where(x => x.Year >= 2017 && x.Engine.HorsePower > 330 && x.Tires.Sum(y => y.Pressure) >= 9 && x.Tires.Sum(y => y.Pressure) <= 10).ToList();
+
+            foreach (var car in carList)
+            {
+                    car.Drive(20);
+                    Console.WriteLine(car.WhoAmI());
             }
         }
     }

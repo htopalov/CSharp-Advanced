@@ -1,24 +1,17 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Text;
 
 namespace CarManufacturer
 {
     public class Car
     {
-        private string make;
-        private string model;
-        private int year;
-        private double fuelQuantity;
-        private double fuelConsumption;
-
         public Car()
         {
             Make = "VW";
             Model = "Golf";
             Year = 2025;
-            FuelQuantity = 200;
             FuelConsumption = 10;
+            FuelQuantity = 200;
         }
         public Car(string make, string model, int year) 
             :this()
@@ -33,7 +26,7 @@ namespace CarManufacturer
             FuelQuantity = fuelQuantity;
             FuelConsumption = fuelConsumption;
         }
-        public Car(string make, string model, int year, double fuelQuantity, double fuelConsumption, Engine engine, Tire tires)
+        public Car(string make, string model, int year, double fuelQuantity, double fuelConsumption, Engine engine, Tire[] tires)
             : this(make,model,year,fuelQuantity,fuelConsumption)
         {
             Engine = engine;
@@ -52,22 +45,29 @@ namespace CarManufacturer
 
         public Engine Engine { get; set; }
 
-        public Tire Tires { get; set; }
+        public Tire[] Tires { get; set; }
 
         public void Drive(double distance)
         {
-            if (fuelQuantity - distance * fuelConsumption > 0)
+
+            if (FuelConsumption * distance / 100 > FuelQuantity)
             {
-                fuelQuantity -= distance * fuelConsumption;
+                Console.WriteLine("Not enough fuel to perform this trip!");
             }
             else
             {
-                Console.WriteLine("Not enough fuel to perform this trip!");
+                FuelQuantity -= distance / 100 * FuelConsumption;
             }
         }
         public string WhoAmI()
         {
-            return $"Make: {this.Make}\nModel: {this.Model}\nYear: {this.Year}\nFuel: {this.FuelQuantity:F2}L";
+            StringBuilder sb = new StringBuilder();
+            sb.Append($"Make: {this.Make}\n");
+            sb.Append($"Model: { this.Model}\n");
+            sb.Append($"Year: {this.Year}\n");
+            sb.Append($"HorsePowers: {this.Engine.HorsePower}\n");
+            sb.Append($"FuelQuantity: {this.FuelQuantity}\n");
+            return sb.ToString();
         }
     }
 }
