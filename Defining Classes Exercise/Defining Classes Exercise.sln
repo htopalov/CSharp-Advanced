@@ -5,11 +5,13 @@ VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Defining Classes Exercise", "Defining Classes Exercise\Defining Classes Exercise.csproj", "{5B6F7F23-C9C6-4DA0-A941-CE52DDC17220}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DefiningClasses", "DefiningClasses\DefiningClasses.csproj", "{F7FC70CE-4D7B-4698-8618-531A82AF77E3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DefiningClasses", "DefiningClasses\DefiningClasses.csproj", "{F7FC70CE-4D7B-4698-8618-531A82AF77E3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DateModifier", "DateModifier\DateModifier.csproj", "{70C76E5E-785F-40E3-B730-12961EEAC603}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DateModifier", "DateModifier\DateModifier.csproj", "{70C76E5E-785F-40E3-B730-12961EEAC603}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpeedRacing", "SpeedRacing\SpeedRacing.csproj", "{24ADD1FB-433B-4ED8-913C-D9056A7B188D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpeedRacing", "SpeedRacing\SpeedRacing.csproj", "{24ADD1FB-433B-4ED8-913C-D9056A7B188D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokemonTrainer", "PokemonTrainer\PokemonTrainer.csproj", "{A093F6C7-6BF7-4526-A937-442F111DABD7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{24ADD1FB-433B-4ED8-913C-D9056A7B188D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{24ADD1FB-433B-4ED8-913C-D9056A7B188D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{24ADD1FB-433B-4ED8-913C-D9056A7B188D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A093F6C7-6BF7-4526-A937-442F111DABD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A093F6C7-6BF7-4526-A937-442F111DABD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A093F6C7-6BF7-4526-A937-442F111DABD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A093F6C7-6BF7-4526-A937-442F111DABD7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
