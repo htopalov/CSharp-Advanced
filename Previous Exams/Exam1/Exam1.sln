@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flower Wreaths", "Exam1\Flo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bee", "Bee\Bee.csproj", "{300B0CC3-503B-40EE-AB56-20CCFF6EBEB2}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VetClinic", "C:\Users\Hristo Topalov\Desktop\OneDrive - Software University (SoftUni)\Documents\Advanced\Exams\VetClinic\VetClinic.csproj", "{F15942BD-53D9-4192-B3EC-04BBDF7BB232}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VetClinic", "VetClinic\VetClinic.csproj", "{0EEEEC60-8DF8-4AED-AAA7-931A4FCEA134}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{300B0CC3-503B-40EE-AB56-20CCFF6EBEB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{300B0CC3-503B-40EE-AB56-20CCFF6EBEB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{300B0CC3-503B-40EE-AB56-20CCFF6EBEB2}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F15942BD-53D9-4192-B3EC-04BBDF7BB232}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F15942BD-53D9-4192-B3EC-04BBDF7BB232}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F15942BD-53D9-4192-B3EC-04BBDF7BB232}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F15942BD-53D9-4192-B3EC-04BBDF7BB232}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0EEEEC60-8DF8-4AED-AAA7-931A4FCEA134}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EEEEC60-8DF8-4AED-AAA7-931A4FCEA134}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EEEEC60-8DF8-4AED-AAA7-931A4FCEA134}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EEEEC60-8DF8-4AED-AAA7-931A4FCEA134}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
