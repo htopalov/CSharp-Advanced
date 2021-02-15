@@ -17,7 +17,7 @@ namespace Garden
                 int flowerCol = position[1];
                 if (!isOut(flowerRow, flowerCol, matrix.GetLength(0), matrix.GetLength(1)))
                 {
-                    Console.WriteLine("Invalid coordinates");
+                    Console.WriteLine("Invalid coordinates.");
                 }
                 else
                 {
@@ -42,7 +42,6 @@ namespace Garden
                 }
                 command = Console.ReadLine();
             }
-
 
 
             for (int row = 0; row < matrix.GetLength(0); row++)
