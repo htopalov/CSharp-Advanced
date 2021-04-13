@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31129.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Re-Volt", "Re-Volt\Re-Volt.csproj", "{A038B39A-F7C8-4244-911C-854FE9B79EB3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A038B39A-F7C8-4244-911C-854FE9B79EB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A038B39A-F7C8-4244-911C-854FE9B79EB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A038B39A-F7C8-4244-911C-854FE9B79EB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A038B39A-F7C8-4244-911C-854FE9B79EB3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1E946BA4-135E-40CE-B9B6-A77B9B5D5D9B}
+	EndGlobalSection
+EndGlobal
